@@ -19,7 +19,7 @@ game.createPlayer = createDummyPlayers = (game) => {
 }
 
 if (game.account === 1) {
-    game.createPlayer(game)
+    game.createPlayer(game);
 }
 function convertCoin(coin) {
     return coin.toLocaleString()
