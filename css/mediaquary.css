@@ -12,12 +12,21 @@
     .his {
         flex-direction: column;
         margin-top: -2vmin;
+        padding: 0 0.4vmin !important;
+        margin-right: -1vmin !important;
+    }
+
+
+    .sta {
+        padding: 0 0.4vmin !important;
+        margin-right: -1vmin !important;
     }
 
     .blac {
         border: none !important;
         margin-top: 2vmin !important;
-        padding: 2vmin !important;
+
+        padding: 1vmin !important;
     }
 
     .learn h4 {
