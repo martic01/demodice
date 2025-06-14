@@ -8,7 +8,9 @@
         font-size: 7px;
         font-weight: 600;
     }
-
+.hisc{
+    border: none !important;
+}
     .his {
         flex-direction: column;
         margin-top: -2vmin;
