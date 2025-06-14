@@ -1566,7 +1566,7 @@ p::-webkit-scrollbar-corner {
     font-size: 2vmin;
     font-family: cursive;
     color: rgb(204, 202, 202);
-    padding: 0 0.7vmin;
+    padding: 0 0.7px;
     margin: 2vmin;
 }
 
