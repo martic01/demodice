@@ -13,7 +13,7 @@ class Game {
         this.goal = 0;
         this.startTimer = null;
         this.timerInterval = null;
-        this.initialTime = 70;
+        this.initialTime = 60;
         this.timeLeft = this.initialTime;
         this.restartTimer = null;
         this.keyturn = null;
@@ -34,7 +34,7 @@ class Game {
         this.goalThreshold = 10;
         this.playerResult = 0;
         this.bL = [5, 15, 20, 25];
-        this.gA = [10, 20, 30, 40, 100, 80, 350];
+        this.gA = [10, 20, 30, 120, 200, 80, 400];
         this.time = 400;
         this.dontRoll1 = 6;
         this.playerSw = null;

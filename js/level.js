@@ -20,7 +20,7 @@ game.limitGoal = function (input) {
         if (input !== errorlow && Number(input)) {
             input = errorlow;
         }
-    }
+    };
 
     if (isNaN(input)) {
         if (haveR) {

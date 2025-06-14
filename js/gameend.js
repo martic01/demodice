@@ -2,7 +2,7 @@ function completeGame(game) {
     const barGrow = document.querySelector(".bar");
     const player1nm = $(".player1").text().toUpperCase();
     const player2nm = $(".player2").text().toUpperCase();
-   
+
 
     const deduct = game.currentPlayer.playerGoal1 - game.otherPlayer.playerGoal2;
     const catch1 = game.currentPlayer.playerGoal1 >= game.goal;
@@ -11,7 +11,7 @@ function completeGame(game) {
     const check2 = game.otherPlayer.playerGoal2 > game.currentPlayer.playerGoal1;
     const verify = catch1 || catch2
 
-    if (verify &&     !game.gameEnded) {
+    if (verify && !game.gameEnded) {
         clearTimeout(game.timeOut);
         clearInterval(game.timerInterval);
         clearTimeout(game.timeTurn);
@@ -113,7 +113,7 @@ function completeGame(game) {
         if (game.currentPlayer.coin < 0) {
             game.currentPlayer.coin = 0;
         }
-        $(".gold").text(game.currentPlayer.coin);
+       
 
         if (game.playerVSai === 1) {
             if (game.currentPlayer.coin >= game.gA[3] && check1 && game.currentPlayer.state === 1 && game.stages === 1) {
@@ -161,7 +161,7 @@ function completeGame(game) {
         }
     }
 
-    if ( verify && !game.gameEnded) {
+    if (verify && !game.gameEnded) {
         console.log("game.playerObj.record before unshift:", game.playerObj.record);
         console.log("Type of game.playerObj.record:", typeof game.playerObj.record);
 
@@ -176,14 +176,19 @@ function completeGame(game) {
             game.level,
             deduct,
         ]);
-        
+
         game.gameEnded = true;
-    }else{
+    } else {
         console.log("game.playerObj.record before unshift: cant do", game.playerObj.record);
         game.playerObj.record
     }
 
     $(".lead1").text(game.lead1);
     $(".lead2").text(game.lead2);
-    
+    const stringed = game.playerObj.coin
+
+    const converted = convertCoin(stringed);
+    $(".gold").text(converted);
+
+
 }

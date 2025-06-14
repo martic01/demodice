@@ -38,7 +38,7 @@ $(document).ready(function () {
         </div>`;
     }
 
-    $(".his").click(() => {
+    $(".hisU").click(() => {
         $(".cont").hide();
         $(".history, .playhis, .resulthis, .pies").show();
         $(".humrec").hide();

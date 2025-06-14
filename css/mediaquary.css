@@ -9,6 +9,17 @@
         font-weight: 600;
     }
 
+    .his {
+        flex-direction: column;
+        margin-top: -2vmin;
+    }
+
+    .blac {
+        border: none !important;
+        margin-top: 2vmin !important;
+        padding: 2vmin !important;
+    }
+
     .learn h4 {
         font-size: 8px;
     }
@@ -27,10 +38,7 @@
         height: 75vh;
     }
 
-    .scr {
-        font-size: 100px;
-        color: rgb(36, 37, 37);
-    }
+
 
     .gamein {
         width: 50vw;
@@ -40,7 +48,6 @@
 
     .countdiv {
         padding: 10px;
-        font-size: 15px;
         font-weight: 500;
     }
 
@@ -79,20 +86,6 @@
         text-shadow: 0 0 7px rgb(237, 241, 241);
     }
 
-    .reset {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        right: 45px;
-        width: 8%;
-        height: 6%;
-        bottom: 100px;
-    }
-
-    .backna {
-        left: 45px;
-    }
 
     #cube {
         width: 80px;
@@ -107,7 +100,7 @@
     }
 
     .dice-container {
-        top: 350px;
+        top: 480px;
     }
 
     .front {
@@ -136,9 +129,7 @@
     }
 
     .effect {
-        top: 240px;
-        width: 41%;
-        height: 100px;
+        top: 0.8% !important;
     }
 
     .result {
@@ -280,25 +271,20 @@
         }
     }
 
-    
+
 
     .level {
         background-position-x: -450px;
     }
 
-    .topses {
-        height: 80%;
-        width: 50%;
 
-
-    }
 
     .imglg {
         height: 90%;
         width: 40%
     }
 
-    
+
 
     .cashout p {
         font-size: 15px;
@@ -320,16 +306,20 @@
     .chtm {
         margin-top: -40px;
     }
+
     .playhis .grp {
         width: 1100px !important;
     }
+
     .resulthis {
         width: 1100px !important;
     }
+
     .pies {
         width: 1100px !important;
     }
-    .humrec{
+
+    .humrec {
         width: 1100px !important;
     }
 }
@@ -349,6 +339,17 @@
         font-size: 10px;
     }
 
+    .his {
+        flex-direction: column;
+        margin-top: -2vmin;
+    }
+
+    .blac {
+        border: none !important;
+        margin-top: 2vmin !important;
+        padding: 2vmin !important;
+    }
+
     .learn h2 {
         font-size: 13px;
     }
@@ -363,10 +364,7 @@
         height: 75vh;
     }
 
-    .scr {
-        font-size: 100px;
-        color: rgb(36, 37, 37);
-    }
+
 
     .gamein {
         width: 50vw;
@@ -376,7 +374,6 @@
 
     .countdiv {
         padding: 10px;
-        font-size: 15px;
         font-weight: 500;
     }
 
@@ -415,16 +412,6 @@
         text-shadow: 0 0 7px rgb(237, 241, 241);
     }
 
-    .reset {
-        right: 45px;
-        width: 8%;
-        height: 8%;
-        bottom: 65px;
-    }
-
-    .backna {
-        left: 45px;
-    }
 
     #cube {
         width: 80px;
@@ -436,10 +423,6 @@
         height: 80px;
         font-size: 30px;
         font-weight: 800;
-    }
-
-    .dice-container {
-        top: 355px;
     }
 
     .front {
@@ -468,9 +451,7 @@
     }
 
     .effect {
-        top: 250px;
-        width: 39%;
-        height: 100px;
+        top: 3% !important;
     }
 
     .result {
@@ -611,24 +592,19 @@
         }
     }
 
-    
+
 
     .level {
         background-position-x: -350px;
     }
 
-    .topses {
-        height: 70%;
-        width: 40%;
-
-    }
 
     .imglg {
         height: 90%;
         width: 37%
     }
 
-    
+
     .cashout p {
         font-size: 30px;
 
@@ -675,9 +651,16 @@
         height: 75vh;
     }
 
-    .scr {
-        font-size: 120px;
-        color: rgb(36, 37, 37);
+
+    .his {
+        flex-direction: column;
+        margin-top: -3vmin;
+    }
+
+    .blac {
+        border: none !important;
+        margin-top: 3vmin !important;
+        padding: 2vmin !important;
     }
 
     .gamein {
@@ -688,7 +671,6 @@
 
     .countdiv {
         padding: 10px;
-        font-size: 15px;
         font-weight: 500;
     }
 
@@ -728,16 +710,6 @@
         text-shadow: 0 0 7px rgb(237, 241, 241);
     }
 
-    .reset {
-        right: 45px;
-        width: 8%;
-        height: 8%;
-        bottom: 65px;
-    }
-
-    .backna {
-        left: 45px;
-    }
 
     #cube {
         width: 80px;
@@ -749,10 +721,6 @@
         height: 80px;
         font-size: 30px;
         font-weight: 800;
-    }
-
-    .dice-container {
-        top: 360px;
     }
 
     .front {
@@ -780,11 +748,7 @@
         transform: rotateX(-90deg) translateZ(30px);
     }
 
-    .effect {
-        top: 270px;
-        width: 30%;
-        height: 100px;
-    }
+
 
     .result {
         height: 90%;
@@ -924,24 +888,19 @@
         }
     }
 
-    
+
 
     .level {
         background-position-x: -250px;
     }
 
-    .topses {
-        height: 70%;
-        width: 40%;
-
-    }
 
     .imglg {
         height: 90%;
         width: 32%
     }
 
-    
+
     .cashout p {
         font-size: 30px;
 
@@ -989,10 +948,7 @@
         height: 80vh;
     }
 
-    .scr {
-        font-size: 120px;
-        color: rgb(36, 37, 37);
-    }
+
 
     .gamein {
         width: 50vw;
@@ -1002,7 +958,6 @@
 
     .countdiv {
         padding: 10px;
-        font-size: 15px;
         font-weight: 500;
     }
 
@@ -1042,16 +997,7 @@
         text-shadow: 0 0 7px rgb(11, 233, 241);
     }
 
-    .reset {
-        right: 200px;
-        width: 5%;
-        height: 7%;
-        bottom: 70px;
-    }
 
-    .backna {
-        left: 200px;
-    }
 
     #cube {
         width: 80px;
@@ -1066,7 +1012,7 @@
     }
 
     .dice-container {
-        top: 340px;
+        top: 480px;
     }
 
     .front {
@@ -1094,11 +1040,7 @@
         transform: rotateX(-90deg) translateZ(30px);
     }
 
-    .effect {
-        top: 240px;
-        width: 22%;
-        height: 100px;
-    }
+
 
     .result {
         height: 90%;
@@ -1228,24 +1170,20 @@
         }
     }
 
-    
+
 
     .level {
         background-position-x: -250px;
     }
 
-    .topses {
-        height: 95%;
-        width: 30%;
 
-    }
 
     .imglg {
         height: 95%;
         width: 25%;
     }
 
-    
+
     .cashout p {
         font-size: 40px;
 
@@ -1258,7 +1196,7 @@
     .demovd {
         width: 60%;
     }
-   
+
 }
 
 @media (min-width: 1200px) and (max-width: 1900px) {
@@ -1276,10 +1214,7 @@
         height: 80vh;
     }
 
-    .scr {
-        font-size: 250px;
-        color: rgb(20, 75, 75);
-    }
+
 
     .gamein {
         width: 27vw;
@@ -1290,7 +1225,6 @@
     .countdiv {
         width: 55%;
         height: 30%;
-        font-size: 30px;
         font-weight: 600;
     }
 
@@ -1330,16 +1264,7 @@
         text-shadow: 0 0 7px rgb(11, 233, 241);
     }
 
-    .reset {
-        right: 290px;
-        width: 5%;
-        height: 7%;
-        bottom: 80px;
-    }
 
-    .backna {
-        left: 295px;
-    }
 
     #cube {
         width: 130px;
@@ -1354,7 +1279,7 @@
     }
 
     .dice-container {
-        top: 270px;
+        top: 480px;
     }
 
     .front {
@@ -1382,11 +1307,7 @@
         transform: rotateX(-90deg) translateZ(50px);
     }
 
-    .effect {
-        top: 350px;
-        width: 18%;
-        height: 130px;
-    }
+
 
     .result {
         height: 90%;
@@ -1429,6 +1350,10 @@
         font-weight: 600;
         background-color: transparent !important;
         color: white;
+    }
+
+    .dice-container {
+        top: 240px !important;
     }
 
     .result button:hover {
@@ -1527,21 +1452,15 @@
         }
     }
 
-    
-
-    .topses {
-        height: 95%;
-        width: 15%;
 
 
-    }
 
     .imglg {
         height: 95%;
         width: 30%;
     }
 
-    
+
 
     .cashout p {
         font-size: 40px;
@@ -1564,17 +1483,21 @@
         width: 100%;
     } */
 }
+
 @media (min-width: 1901px)and (max-width: 2300px) {
 
     .playhis .grp {
         width: 2000px !important;
     }
+
     .resulthis {
         width: 2000px !important;
     }
+
     .pies {
         width: 2000px !important;
     }
+
     .main-cont {
         background: linear-gradient(90deg, rgba(52, 128, 128, 0.397), rgb(0, 255, 255), rgba(25, 117, 117, 0.329));
     }
@@ -1589,10 +1512,7 @@
         height: 80vh;
     }
 
-    .scr {
-        font-size: 250px;
-        color: rgb(20, 75, 75);
-    }
+
 
     .gamein {
         width: 27vw;
@@ -1603,7 +1523,6 @@
     .countdiv {
         width: 55%;
         height: 30%;
-        font-size: 30px;
         font-weight: 600;
     }
 
@@ -1643,16 +1562,7 @@
         text-shadow: 0 0 7px rgb(11, 233, 241);
     }
 
-    .reset {
-        right: 290px;
-        width: 5%;
-        height: 7%;
-        bottom: 80px;
-    }
 
-    .backna {
-        left: 295px;
-    }
 
     #cube {
         width: 130px;
@@ -1664,10 +1574,6 @@
         height: 130px;
         font-size: 60px;
         font-weight: 800;
-    }
-
-    .dice-container {
-        top: 270px;
     }
 
     .front {
@@ -1695,11 +1601,7 @@
         transform: rotateX(-90deg) translateZ(50px);
     }
 
-    .effect {
-        top: 350px;
-        width: 18%;
-        height: 130px;
-    }
+
 
     .result {
         height: 90%;
@@ -1840,21 +1742,16 @@
         }
     }
 
-    
-
-    .topses {
-        height: 95%;
-        width: 15%;
 
 
-    }
+
 
     .imglg {
         height: 95%;
         width: 30%;
     }
 
-    
+
 
     .cashout p {
         font-size: 40px;
@@ -1873,17 +1770,21 @@
         width: 40%;
     }
 }
+
 @media (min-width: 2301px) {
 
     .playhis .grp {
         width: 5000px !important;
     }
+
     .resulthis {
         width: 5000px !important;
     }
+
     .pies {
         width: 5000px !important;
     }
+
     .main-cont {
         background: linear-gradient(90deg, rgba(52, 128, 128, 0.397), rgb(0, 255, 255), rgba(25, 117, 117, 0.329));
     }
@@ -1898,10 +1799,7 @@
         height: 80vh;
     }
 
-    .scr {
-        font-size: 250px;
-        color: rgb(20, 75, 75);
-    }
+
 
     .gamein {
         width: 27vw;
@@ -1912,7 +1810,6 @@
     .countdiv {
         width: 55%;
         height: 30%;
-        font-size: 30px;
         font-weight: 600;
     }
 
@@ -1952,16 +1849,6 @@
         text-shadow: 0 0 7px rgb(11, 233, 241);
     }
 
-    .reset {
-        right: 290px;
-        width: 5%;
-        height: 7%;
-        bottom: 80px;
-    }
-
-    .backna {
-        left: 295px;
-    }
 
     #cube {
         width: 130px;
@@ -2004,11 +1891,7 @@
         transform: rotateX(-90deg) translateZ(50px);
     }
 
-    .effect {
-        top: 350px;
-        width: 18%;
-        height: 130px;
-    }
+
 
     .result {
         height: 90%;
@@ -2149,21 +2032,16 @@
         }
     }
 
-    
-
-    .topses {
-        height: 95%;
-        width: 15%;
 
 
-    }
+
 
     .imglg {
         height: 95%;
         width: 30%;
     }
 
-    
+
 
     .cashout p {
         font-size: 40px;
@@ -2181,4 +2059,12 @@
     .demovd {
         width: 40%;
     }
+}
+
+@media (max-height: 870px) {
+
+    .dice-container {
+        top: 270px !important;
+    }
+
 }

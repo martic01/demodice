@@ -21,7 +21,9 @@ game.createPlayer = createDummyPlayers = (game) => {
 if (game.account === 1) {
     game.createPlayer(game)
 }
-
+function convertCoin(coin) {
+    return coin.toLocaleString()
+}
 function closeUp(x, y, t) {
     $(x).addClass(y).show();
     setTimeout(() => $(x).removeClass(y).hide(), t);
@@ -29,7 +31,7 @@ function closeUp(x, y, t) {
 
 $(document).ready(function () {
     $(".level").show();
-    $(".main-cont").hide();
+    $(".main-cont,.input-cont,.effect").hide();
     document.getElementById('show-signup').addEventListener('click', (e) => {
         e.preventDefault();
         const loginPage = document.getElementById('login-page');
@@ -74,10 +76,15 @@ $(document).ready(function () {
         $(".display2").html(`<span>Hard</span>`);
         $(".display3").html(`<span>Master</span>`);
     }
+    const stringed = game.playerObj.coin
+   
+        const converted = convertCoin(stringed);
+        $(".gold").text(converted);
+      
 
     $(".pack").hide();
     $(".cont").hide();
-    $(".gold").text(game.playerObj.coin);
+
     learn();
 
     $(".ler").click(function () {
@@ -88,7 +95,7 @@ $(document).ready(function () {
         $(".learn").slideToggle();
     });
 
-   
+
     $(".arrw").click(function () {
         game.there = true;
         $(".level").show();
@@ -221,15 +228,14 @@ $(document).ready(function () {
         if (game.currentPlayer.state <= 4) {
             if (game.currentPlayer.state === 2) {
                 $(".open1").trigger("click");
-                $(".gold").text(game.playerObj.coin);
-                console.log('enterd');
+                $(".gold").text(converted);
 
             } else if (game.currentPlayer.state === 3) {
                 $(".open2").trigger("click");
-                $(".gold").text(game.playerObj.coin);
+                $(".gold").text(converted);
             } else if (game.currentPlayer.state === 4) {
                 $(".open3").trigger("click");
-                $(".gold").text(game.playerObj.coin);
+                $(".gold").text(converted);
             } else if (game.currentPlayer.state === 4) {
                 $(".nextlv").removeClass("alert");
                 $(".cned").text("");
@@ -287,5 +293,6 @@ $(document).ready(function () {
                 break;
         }
     });
+
 
 });

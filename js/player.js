@@ -12,7 +12,7 @@ class Player {
         this.status1 = null;
         this.status2 = null;
         this.stages = 1;
-        this.coin = 30;
+        this.coin = 100;
         this.cash = 0;
         this.state = 1;
         this.bar = 0;

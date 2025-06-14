@@ -90,7 +90,7 @@ body::-webkit-scrollbar-corner {
     background-position-y: -100px;
     font-weight: 600;
     position: absolute;
-    z-index: 999990;
+    z-index: 999999;
     padding: 10px;
 
 }
@@ -335,6 +335,7 @@ body::-webkit-scrollbar-corner {
 }
 
 .inmn {
+    position: relative;
     background-color: #ffffff8f;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.534);
     justify-content: flex-start;
@@ -400,19 +401,22 @@ body::-webkit-scrollbar-corner {
 }
 
 .scr {
+    font-size: 15vmin;
     font-weight: 100;
 }
 
 .gamein {
     position: absolute;
     justify-content: space-between;
-    margin-top: 55px;
+    bottom: 4%;
     color: #fff;
 }
 
 .countdiv {
     margin-top: 20px;
+    font-size: 4vmin;
     text-align: center;
+    align-content: center;
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
 }
@@ -420,6 +424,8 @@ body::-webkit-scrollbar-corner {
 
 .controls {
     gap: 10px;
+    font-size: 4vmin;
+    z-index: 9999;
 }
 
 .input-cont {
@@ -430,6 +436,7 @@ body::-webkit-scrollbar-corner {
     width: 20%;
     background-color: #050505fd;
     display: block;
+    z-index: 99999;
 }
 
 
@@ -473,24 +480,29 @@ body::-webkit-scrollbar-corner {
     justify-items: center;
     padding: 0.7vmin;
 }
-.bbt .textp .coinimg{
+
+.bbt .textp .coinimg {
     border-radius: 7px;
 }
+
 .bbt .eaz {
     background-color: rgb(55, 182, 182);
 
 }
+
 .bbt .mid {
     background-color: rgb(97, 248, 248);
 
 }
+
 .bbt .had {
     background-color: rgb(240, 93, 56);
 
 }
+
 .bbt .mas {
     background-color: rgb(255, 22, 22);
-    
+
 
 }
 
@@ -604,10 +616,94 @@ body::-webkit-scrollbar-corner {
     }
 }
 
+.allre {
+    width: 98%;
+    height: 10vmin;
+    position: absolute;
+    bottom: 10px;
+    justify-items: flex-end;
+}
+
+.reset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 70%;
+    padding: 1vmin;
+}
+
+.reset img {
+    animation: 5s close linear infinite;
+}
+
+.reset p {
+    font-size: 2vmin;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.reset p:hover {
+    color: white;
+}
+
+.fast {
+    animation: 0.6s close linear infinite !important;
+}
+
+
+
+.contbac {
+    width: 88%;
+    height: 10vmin;
+    position: absolute;
+    bottom: 10px;
+    justify-content: flex-start;
+}
+
+
+
 .backna {
+    transition: 0.8s;
+    padding: 1vmin 1.2vmin;
     animation: 8s slideinin2 linear infinite;
-    background-color: transparent;
     border: none;
+    background-color: transparent;
+    border: 7px solid black;
+    font-size: 1.5vmin;
+    color: #080808;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.322);
+    clip-path: polygon(100% 0, 20% 0, 0 50%, 20% 100%, 80% 90%);
+}
+
+.backna:hover {
+    clip-path: polygon(100% 0, 20% 0, 0 50%, 20% 100%, 100% 100%);
+    border: 3px solid gold;
+    background-color: rgba(8, 8, 8, 0.849);
+    color: #faf9f9;
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.815);
+}
+
+.backna:hover .lil {
+    animation: 2s up linear infinite, 2s close linear infinite;
+}
+
+.backna p {
+    font-weight: 800;
+}
+
+.imglil {
+    gap: 0.8vmin;
+}
+
+.imglil p {
+    font-weight: 200;
+}
+
+.lil {
+    width: 3vmin;
+    height: 3vmin;
 }
 
 @keyframes slideinin2 {
@@ -807,28 +903,6 @@ body::-webkit-scrollbar-corner {
 }
 
 
-.reset {
-    position: absolute;
-}
-
-.reset img {
-    animation: 5s close linear infinite;
-}
-
-.reset p {
-    margin-bottom: 10px;
-    font-weight: 900;
-}
-
-.reset p:hover {
-    color: white;
-}
-
-.fast {
-    animation: 0.6s close linear infinite !important;
-}
-
-
 
 @keyframes close {
     to {
@@ -908,7 +982,9 @@ img {
 
 
 .dice-container {
+    z-index: 999;
     position: absolute;
+    top: 480px;
 }
 
 #cube {
@@ -932,20 +1008,24 @@ img {
 
 .effect {
     position: absolute;
-    display: none;
+    top: 10%;
+    width: 41%;
+    width: 100%;
+    height: 20%;
+
 }
 
 .effect img {
+    width: 25vmin;
+    height: 25vmin;
     opacity: 0.8;
+    scale: 0.7;
 }
 
-.eff1 {
-    margin-top: 26px;
-    scale: 0.5;
-}
+
 
 .learn {
-    z-index: 99;
+    z-index: 99999;
     padding: 20px;
     width: 80%;
     left: 10%;
@@ -1122,33 +1202,62 @@ h3 p {
     margin-bottom: 80px;
     background-color: #f0f7f66b;
     justify-content: flex-end;
-    gap: 20px;
-    padding: 10px;
 }
 
-.bac {
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 15px;
+.topcm {
+    width: 120vmin;
+     padding: 0 1.2vmin;
 }
 
-.bac:hover {
-    transition: .3s;
-    font-size: 45px;
-    color: #c31010;
-    line-height: 12px;
+.topc {
+    width: 18vmin;
+    padding: 0 1.2vmin;
 }
+
+.topcc {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-right: 1px solid #fff;
+}
+
+.topses {
+    height: 9vmin;
+    width: 18vmin;
+}
+
 
 .cashout {
-    gap: 10px;
-    background-color: #924e218c;
-    border-radius: 30%;
+    justify-content: space-between;
+    padding: 0 1vmin;
+    background-color: #1f1e1e8c;
+    border: 3px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
 }
 
 .cashout p {
-    font-weight: 800;
-    color: #000;
+    font-weight: 700;
+    color: #f8f6f6;
+    width: 67%;
+    font-size: 4vmin;
+    text-align: right;
+    overflow-x: auto;
+}
+
+p::-webkit-scrollbar {
+    width: 7px;
+    height: 3px;
+}
+
+p::-webkit-scrollbar-track {
+    background-color: rgba(80, 69, 5, 0.582);
+}
+
+p::-webkit-scrollbar-thumb {
+    background-color: gold;
+}
+
+p::-webkit-scrollbar-corner {
+    background-color: black;
 }
 
 .set {
@@ -1159,6 +1268,7 @@ h3 p {
     top: 70px;
     right: -8px;
     position: absolute;
+    z-index: 9;
     width: 50vw;
     height: 350px;
     border-top-left-radius: 10px;
@@ -1375,10 +1485,7 @@ h3 p {
     margin-left: -15px;
 }
 
-.backna {
-    width: 3%;
-    height: 10%;
-}
+
 
 .newimg {
     height: 40%;
@@ -1453,29 +1560,71 @@ h3 p {
 
 .his {
     transition: .3s;
-    background-color: rgb(61, 60, 60);
-    border: 3px dotted rgb(243, 242, 242);
+    background-color: rgb(14, 13, 13);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    height: 10%;
-    width: 50%;
-    font-size: 14px;
-    color: rgb(230, 228, 228);
-    padding: 20px;
+    height: 8.3vmin;
+    font-size: 2vmin;
+    font-family: cursive;
+    color: rgb(204, 202, 202);
+    padding: 0 0.7vmin;
 }
 
 .his:hover {
-    background-color: rgba(20, 20, 20, 0.993) !important;
-    color: rgb(243, 240, 240);
+    background-color: rgba(255, 255, 255, 0.993) !important;
+    color: rgb(7, 7, 7);
+}
+.blac{
+    border-right: 1px solid white;
+    color: rgb(151, 151, 151);
+    margin: 0 1vmin;
+    padding:0.8vmin;
+    letter-spacing: 1vmin;
+}
+.his:hover .blac{
+    border-right: 1px solid rgb(8, 8, 8);
+}
+.his:hover .sta{
+     background-color: #000000;
+    color: rgb(209, 207, 207);
+}
+.his:hover .sta div:first-child{
+      border-bottom: 1px solid rgb(255, 255, 255);
+}
+.sta{
+    padding:0.2vmin 0.4vmin;
+    background-color: #fbfcfc;
+    color: black;
+     letter-spacing: 0.7vmin;
+}
+.sta .sizx{
+    border-left: 1px solid grey;
+   width: 70px;
+   padding: 0.2vmin;
+   overflow-x: auto;
+   letter-spacing: 0.3vmin;
+   text-align: right;
+}
+.sta div:first-child{
+   gap: 1vmin;
+   padding: 0.1vmin 0;
+   border-bottom: 1px solid black;
 }
 
 .hisc {
+    width: 100%;
+    height: 27%;
     border: 5px dotted rgb(187, 187, 187);
-    animation: 12s slid linear infinite;
+    border-left: none;
+    border-right: none;
+    animation: 30s slid linear infinite;
     animation-delay: 7s;
 }
 
 .hisc:hover {
-    border: 5px dotted !important;
+     border: 4px dotted;
+     border-left: none;
+    border-right: none;
+   
 
 }
 
