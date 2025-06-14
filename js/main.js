@@ -22,11 +22,11 @@ if (game.account === 1) {
     game.createPlayer(game);
 }
 function convertCoin(coin) {
-    return coin.toLocaleString()
+    return coin.toLocaleString();
 }
-function closeUp(x, y, t) {
+function closeUp(x, y, f) {
     $(x).addClass(y).show();
-    setTimeout(() => $(x).removeClass(y).hide(), t);
+    setTimeout(() => $(x).removeClass(y).hide(), f);
 }
 
 $(document).ready(function () {
