@@ -119,12 +119,12 @@ $(document).ready(function () {
             if ($(el).text() === "Lost") $(".gm").eq(index).removeClass("wondiv").addClass("losediv");
         });
     });
-   
+
 
     $(".closehis").click(function () {
-        closeUp(".history","leave",1100)
+        closeUp(".history", "leave", 1100)
         $(".disstatus").empty();
-       
+
     });
 
 
@@ -154,4 +154,5 @@ $(document).ready(function () {
         $(".humrec").show();
         $(".resulthis,.pies").hide();
     });
+
 });

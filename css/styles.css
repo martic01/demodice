@@ -53,9 +53,12 @@ input {
 
 body {
     height: 100vh;
-    overflow-x: hidden;
+
     background-color: #050505;
     user-select: none;
+    background-image: url(../img/lucky-dice-game-background.jpg);
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 body::-webkit-scrollbar {
@@ -257,7 +260,7 @@ body::-webkit-scrollbar-corner {
     font-weight: 900;
 }
 
-.infoy p {
+.infoy .guest {
     text-align: left;
 }
 
@@ -336,15 +339,15 @@ body::-webkit-scrollbar-corner {
 
 .inmn {
     position: relative;
-    background-color: #ffffff8f;
+    background: #ffffff2f;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.534);
     justify-content: flex-start;
     padding: 10px;
-
+    backdrop-filter: blur(10px);
 }
 
 .mn {
-    background-color: #ffffff59;
+    background: #ffffff46;
 }
 
 .player-nm {
@@ -433,9 +436,10 @@ body::-webkit-scrollbar-corner {
     background-size: cover;
     background-repeat: repeat;
     position: absolute;
-    width: 20%;
+    width: 80%;
     background-color: #050505fd;
-    display: block;
+    display: flex;
+    justify-self: center;
     z-index: 99999;
 }
 
@@ -852,7 +856,26 @@ body::-webkit-scrollbar-corner {
     }
 }
 
+.retrys .stbbt {
+   width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(68, 3, 6);
+    border: 3px solid rgb(243, 240, 240);
+    color: #f82525;
+    border-radius: 20%;
+}
 
+.retrys .stbbt:hover {
+     width: 210px;
+    
+    cursor: default;
+    background-color: rgba(114, 8, 8, 0.719);
+    border: 3px solid rgb(236, 23, 34);
+    color: #edf1f1;
+}
 
 .locked {
     background-color: #000000d7 !important;
@@ -1026,14 +1049,16 @@ img {
 
 .learn {
     z-index: 99999;
-    padding: 20px;
+    padding: 30px 40px;
+    display: flex;
+    justify-self: center;
     width: 80%;
-    left: 10%;
+    height: 94%;
     margin: auto;
     position: absolute;
     background-color: #FFF;
     display: none;
-    top: 8px;
+    top: 10px;
 }
 
 .learn h2 {
@@ -1206,7 +1231,7 @@ h3 p {
 
 .topcm {
     width: 120vmin;
-     padding: 0 1.2vmin;
+    padding: 0 1.2vmin;
 }
 
 .topc {
@@ -1238,7 +1263,7 @@ h3 p {
     font-weight: 700;
     color: #f8f6f6;
     width: 67%;
-    font-size: 4vmin;
+    font-size: 2.8vmin;
     text-align: right;
     overflow-x: auto;
 }
@@ -1265,14 +1290,12 @@ p::-webkit-scrollbar-corner {
 }
 
 .pack {
-    top: 70px;
-    right: -8px;
+    top: 87px;
+    right: -9px;
     position: absolute;
     z-index: 9;
     width: 50vw;
-    height: 350px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10%;
+    height: 83vh;
     background-color: #d7e0e0;
     align-items: end;
     gap: 1px;
@@ -1287,7 +1310,7 @@ p::-webkit-scrollbar-corner {
     }
 
     to {
-        transform: translateX(0);
+        transform: translateX(-13px);
     }
 }
 
@@ -1327,13 +1350,13 @@ p::-webkit-scrollbar-corner {
 
 .inpack {
     width: 99%;
-    height: 48%;
+    height: 47%;
     gap: 2px;
     padding-bottom: 5px;
     font-size: 27px;
     font-weight: 700;
     color: white;
-    background: radial-gradient(circle, rgb(184, 172, 145) 20%, rgb(248, 214, 62) 35%, rgb(129, 127, 1) 40%, rgb(107, 91, 1) 35%, rgb(56, 55, 2), black);
+    background: radial-gradient(circle, rgb(207, 207, 207) 20%, rgb(253, 253, 251) 35%, rgb(219, 219, 219) 40%, rgb(184, 184, 183) 35%, rgb(187, 187, 187), rgb(61, 61, 61));
     border-top-left-radius: 10px;
     border-bottom-left-radius: inherit;
     backdrop-filter: blur(20px);
@@ -1357,6 +1380,7 @@ p::-webkit-scrollbar-corner {
 
 .colpack {
     height: 30%;
+    margin-bottom: 10px;
 }
 
 .soundpk {
@@ -1424,6 +1448,21 @@ p::-webkit-scrollbar-corner {
 .setin {
     width: 60px;
     height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setopt {
+    transition: .2s;
+    font-size: 60px;
+    color: #dfdfdf;
+    text-shadow: 2px 4px 7px rgb(0, 217, 255);
+}
+
+.setopt:hover {
+    color: #161616;
+    text-shadow: 2px 4px 7px rgb(233, 234, 235);
 }
 
 .cashin {
@@ -1545,7 +1584,7 @@ p::-webkit-scrollbar-corner {
 }
 
 .soundch:hover {
-    background-color: #ecb651;
+    background-color: #cadff3;
     opacity: 1;
     color: black;
     font-size: 16px;
@@ -1566,49 +1605,62 @@ p::-webkit-scrollbar-corner {
     font-size: 2vmin;
     font-family: cursive;
     color: rgb(204, 202, 202);
-    padding: 0 0.7px;
-    margin: 2vmin;
+    padding: 0 0.7vmin;
 }
 
 .his:hover {
     background-color: rgba(255, 255, 255, 0.993) !important;
     color: rgb(7, 7, 7);
 }
-.blac{
+
+.blac {
     border-right: 1px solid white;
     color: rgb(151, 151, 151);
     margin: 0 1vmin;
-    padding:0.8vmin;
+    padding: 0.8vmin;
     letter-spacing: 1vmin;
 }
-.his:hover .blac{
+
+.his:hover .blac {
     border-right: 1px solid rgb(8, 8, 8);
+
 }
-.his:hover .sta{
-     background-color: #000000;
+
+.his .blac:hover {
+    background-color: rgba(0, 0, 0, 0.63);
+    color: black;
+    padding: 1.5vmin;
+}
+
+.his:hover .sta {
+    background-color: #000000;
     color: rgb(209, 207, 207);
 }
-.his:hover .sta div:first-child{
-      border-bottom: 1px solid rgb(255, 255, 255);
+
+.his:hover .sta div:first-child {
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
-.sta{
-    padding:0.2vmin 0.4vmin;
+
+.sta {
+    padding: 0.2vmin 0.4vmin;
     background-color: #fbfcfc;
     color: black;
-     letter-spacing: 0.7vmin;
+    letter-spacing: 0.7vmin;
 }
-.sta .sizx{
+
+.sta .sizx {
     border-left: 1px solid grey;
-   width: 70px;
-   padding: 0.2vmin;
-   overflow-x: auto;
-   letter-spacing: 0.3vmin;
-   text-align: right;
+    width: 70px;
+    padding: 0.2vmin;
+    overflow-x: auto;
+    letter-spacing: 0.3vmin;
+    text-align: right;
 }
-.sta div:first-child{
-   gap: 1vmin;
-   padding: 0.1vmin 0;
-   border-bottom: 1px solid black;
+
+.sta div:first-child {
+    gap: 1vmin;
+    padding: 0.1vmin 0;
+    border-bottom: 1px solid black;
 }
 
 .hisc {
@@ -1622,10 +1674,10 @@ p::-webkit-scrollbar-corner {
 }
 
 .hisc:hover {
-     border: 4px dotted;
-     border-left: none;
+    border: 4px dotted;
+    border-left: none;
     border-right: none;
-   
+
 
 }
 

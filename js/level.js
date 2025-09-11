@@ -196,16 +196,17 @@ $(document).ready(function () {
             if (game.playerVSai === 1) {
                 $("#player2").prop("readonly", true).val("MarticAM.AI💻 " + game.level.charAt(0));
             }
-            if (see !== game.stages) {
-                resetGame(game)
-                clearInterval(game.timerInterval)
-                game.timeLeft = game.initialTime
-                game.startTimer()
-                $(".input-cont").show()
-            } else {
-                clearInterval(game.timerInterval)
-                game.startTimer()
-            };
+            $(".input-cont").show()
+            // if (see !== game.stages) {
+            //     resetGame(game)
+            //     clearInterval(game.timerInterval)
+            //     game.timeLeft = game.initialTime
+            //     game.startTimer()
+            //     $(".input-cont").show()
+            // } else {
+            //     clearInterval(game.timerInterval)
+            //     game.startTimer()
+            // };
 
             if (game.gameEnded) {
                 resetGame(game)

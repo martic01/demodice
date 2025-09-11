@@ -29,6 +29,7 @@ function completeGame(game) {
             $(".winnm").text(player1nm);
             $(".winsc").text(deduct);
             game.lead1 += 1;
+            game.currentPlayer.wlcount[0] += 1;
             game.currentPlayer.status1 = "Won";
             game.otherPlayer.status2 = "Lost";
 
@@ -87,6 +88,7 @@ function completeGame(game) {
             $(".winsc").text(deduct * -1);
             $(".mes").fadeOut();
             game.lead2 += 1;
+            game.currentPlayer.wlcount[1] += 1;
             game.currentPlayer.status1 = "Lost";
             game.otherPlayer.status2 = "Won";
             if (game.playerVSai === 1) {

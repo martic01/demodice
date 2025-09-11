@@ -19,14 +19,14 @@ game.createPlayer = createDummyPlayers = (game) => {
 }
 
 if (game.account === 1) {
-    game.createPlayer(game);
+    game.createPlayer(game)
 }
 function convertCoin(coin) {
-    return coin.toLocaleString();
+    return coin.toLocaleString()
 }
-function closeUp(x, y, f) {
+function closeUp(x, y, t) {
     $(x).addClass(y).show();
-    setTimeout(() => $(x).removeClass(y).hide(), f);
+    setTimeout(() => $(x).removeClass(y).hide(), t);
 }
 
 $(document).ready(function () {
@@ -77,10 +77,10 @@ $(document).ready(function () {
         $(".display3").html(`<span>Master</span>`);
     }
     const stringed = game.playerObj.coin
-   
-        const converted = convertCoin(stringed);
-        $(".gold").text(converted);
-      
+
+    const converted = convertCoin(stringed);
+    $(".gold").text(converted);
+
 
     $(".pack").hide();
     $(".cont").hide();
@@ -189,8 +189,8 @@ $(document).ready(function () {
         $(".see").hide();
         $(".digit").text("0");
         if (game.playerVSai === 1) {
-            $(".main-cont").hide();
-            $(".level").show();
+            $(".main-cont").fadeOut(400);
+            $(".level").fadeIn(300);
             game.there = true;
             game.back = true;
         } else {
@@ -204,8 +204,29 @@ $(document).ready(function () {
     $(".setin").click(() => {
         clearTimeout(packt)
         $(".pack").toggle();
-        packt = setTimeout(() => $(".pack").slideUp(), 10000);
+        packt = setTimeout(() => {
+            $('.pack').slideUp();
+        }, 7000);
+
     });
+    // keep timer reference
+
+    $(".pack").hover(
+        function () {
+            // Hover in
+            clearTimeout(packt);
+            $(this).show();
+            document.querySelector(".setopt").style.color = 'black';
+        },
+        function () {
+            // Hover out
+            packt = setTimeout(() => {
+                $(this).slideUp();
+            }, 7000); 
+             document.querySelector(".setopt").style.color = '';
+        }
+    );
+   
 
     // $("#pick").click(() => {
     //     $(".paced").slideToggle();
@@ -251,6 +272,7 @@ $(document).ready(function () {
         }
     });
 
+
     window.addEventListener("keyup", (e) => {
         switch (e.key) {
             case "r":
@@ -282,7 +304,7 @@ $(document).ready(function () {
                 // game.currentPlayer = game.playId[0] ;
                 // game.otherPlayer = game.playId[1] ;
                 // const otherPlayers = game.players[otherPlayerId];
-                resta
+
                 // Log for debugging
                 // console.log("Current Player ID:", game.currentPlayer.id);
                 // console.log("Player obj:", game.playerObj.record.unshift(['hell0']));

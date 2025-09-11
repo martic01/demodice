@@ -11,7 +11,7 @@ $(document).ready(function () {
         }
     });
 
-    function applyStyles(className,game) {
+    function applyStyles(className, game) {
         $(`.${className}`).click(function () {
             const index = $(`.${className}`).index(this);
             const c = ["white", "red", "aqua", "blue", "pink", "green", "black"];
@@ -28,6 +28,28 @@ $(document).ready(function () {
             $(".pikcol").eq(index).text(`✔`);
 
             document.querySelector(".pack").style.backgroundColor = c[index];
+            document.querySelector(".setopt").style.textShadow = `2px 4px 7px ${c[index + 1]}`;
+
+
+
+            $(".soundch").hover(
+                function () {
+                    $(this).css('background-color', c[index])
+                    setTimeout(() => {
+                        $(this).css('background-color', cA[index])
+                    }, 450);
+
+                },
+                function () {
+                    $(this).css('background-color', cA[index])
+                    setTimeout(() => {
+                        $(this).css('background-color', '')
+                    }, 500);
+                }
+
+            );
+
+
             document.querySelector(".main-cont").style = `background: linear-gradient(90deg, ${gradients});`;
 
             document.querySelectorAll(".tool, .usernmhum, .his").forEach(el => {
@@ -58,6 +80,7 @@ $(document).ready(function () {
                 document.querySelector(".ar").style.color = c[6];
                 document.querySelector(".ar2").style.color = "#252323";
                 document.querySelector(".his").style.color = "grey";
+
             } else if (index === 2 || index === 4) {
                 document.querySelector(".levelmes").style.color = c[7];
                 document.querySelector(".ar").style.color = c[7];
@@ -73,5 +96,6 @@ $(document).ready(function () {
     }
 
 
-    applyStyles("colour",game);
+
+    applyStyles("colour", game);
 });

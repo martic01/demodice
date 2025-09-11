@@ -19,6 +19,7 @@ class Player {
         this.record = [];
         this.cashRecord = [];
         this.count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        this.wlcount = [0,0];
         this.online = false;
         this.banned = false;
     }

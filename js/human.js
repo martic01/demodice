@@ -249,7 +249,10 @@ function resetGame(game) {
 
     game.playerResult = 0;
     // game.playerSw = Object.keys(game.players)[0]; // Reset to the first player
-
+const countingwins = game.currentPlayer.wlcount[0]
+    const countinglost = game.currentPlayer.wlcount[1]
+    $(".wins").text(countingwins)
+    $(".lostin").text(countinglost)
     $(".bar").removeClass("alert");
     $(".lvmes").text("");
     $(".error").text("You can input your Nick name").css("color", "white");

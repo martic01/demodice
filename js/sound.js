@@ -60,5 +60,5 @@ $(document).ready(function () {
 
 
     $(".sdsw").text(game.off ? "OFF" : "ON");
-    $(".sd2").trigger("click");
+    $(".sd3").trigger("click");
 });
