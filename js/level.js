@@ -89,6 +89,7 @@ $(document).ready(function () {
         const see = game.stages
         game.there = false;
         game.back = true;
+         $(".input-cont").show()
         $(".nextlv, .cashin, .coinwin").show();
         game.level = " ";
         $(".main-cont").hide();
@@ -194,13 +195,21 @@ $(document).ready(function () {
                 game.there = false;
                 $(".inputimg").html('<img src="img/useer.png">');
                 $("#player2").val("PLAYER😇").prop("readonly", false);
+            } else if (index === 5) {
+                $(".main-cont").hide();
+                $(".input-cont").hide();
+                $(".go2").hide();
+                game.there = true;
+                game.level = " ";
+                console.log('why');
+                
             }
 
             $(".levelmes").text(game.level);
             if (game.playerVSai === 1) {
                 $("#player2").prop("readonly", true).val("MarticAM.AI💻 " + game.level.charAt(0));
             }
-            $(".input-cont").show()
+           
             // if (see !== game.stages) {
             //     resetGame(game)
             //     clearInterval(game.timerInterval)
