@@ -1,5 +1,5 @@
 const high = 200;
-const low = 10;
+const low = 50;
 const defaultValue = 100;
 game.limitGoal = function (input) {
     const errorhigh = `Goal can't be greater than ${high}`

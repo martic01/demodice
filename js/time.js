@@ -40,12 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 digit.textContent = newDigit;
                 digit.classList.add("write");
 
-                if (game.timeLeft <= 5) {
+                if (game.timeLeft <= 3) {
                     digit.classList.add("glow-red");
                     if (game.rolled) {
                         $("#roll").trigger("click");
                     }
-                } else if (game.timeLeft <= 20) {
+                } else if (game.timeLeft <= 15) {
                     digit2.forEach((e) => {
                         e.classList.add("glow-yellow");
                     });
