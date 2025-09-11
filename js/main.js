@@ -99,7 +99,8 @@ $(document).ready(function () {
     $(".arrw").click(function () {
         game.there = true;
         $(".level").show();
-        $(".main-cont").hide();
+        $(".main-cont").hide()
+         $(".input-cont").hide();
     });
 
     $(".start").click(function () {
