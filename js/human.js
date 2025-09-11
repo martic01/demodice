@@ -1,14 +1,6 @@
 // Utility Functions
 
-function waitTimer(button) {
-    button.style.pointerEvents = "none";
-    setTimeout(() => button.style.pointerEvents = "auto", 900);
-}
 
-function waitTimer2(button) {
-    button.style.pointerEvents = "none";
-    setTimeout(() => button.style.pointerEvents = "auto", 2000);
-}
 
 function learn() {
     $(".learn").hide();

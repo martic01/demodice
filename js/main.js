@@ -128,6 +128,28 @@ $(document).ready(function () {
         }
     });
 
+    function waitTimer(button,game) {
+        button.style.pointerEvents = "none";
+        button.style.opacity = '0.4'
+        setTimeout(() => {
+            if(!game.aiRolling){
+            button.style.pointerEvents = "auto"
+            button.style.opacity = ''
+            }
+        }, 1700);
+    }
+
+    function waitTimer2(button,game) {
+        button.style.pointerEvents = "none";
+        button.style.opacity = '0.4'
+        setTimeout(() => {
+            if(!game.aiRolling){
+            button.style.pointerEvents = "auto"
+            button.style.opacity = ''
+            }
+        }, 3000);
+    }
+
     document.getElementById("roll").addEventListener("click", function () {
         const button = document.getElementById("roll");
         if (game.timeLeft > 10) {
@@ -139,9 +161,9 @@ $(document).ready(function () {
             rollOneSwitchAi(game);
         } else if (game.playerVSai === 2) {
             rollOneSwitch(game);
-            waitTimer(button, game);
             game.playerResult = parseInt($("#count").text());
         }
+        waitTimer(button,game)
     });
 
     $(".save").on("click", function () {
@@ -156,9 +178,9 @@ $(document).ready(function () {
             saveSwitchPlayer(game);
             completeGame(game);
             effectTimer(game);
-            waitTimer2(button, game);
             game.aiRolling = false;
         }
+        waitTimer2(button,game);
     });
 
     $(".inc").on("input", function () {
