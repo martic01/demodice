@@ -475,7 +475,7 @@ body::-webkit-scrollbar-corner {
 .textp {
     transition: .3s;
     max-width: 270px;
-    width: 95%;
+    width: 93%;
     margin: 1vmin;
     border-radius: 10px;
     background-color: transparent;
