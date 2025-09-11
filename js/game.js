@@ -13,7 +13,7 @@ class Game {
         this.goal = 0;
         this.startTimer = null;
         this.timerInterval = null;
-        this.initialTime = 30;
+        this.initialTime = 60;
         this.timeLeft = this.initialTime;
         this.restartTimer = null;
         this.keyturn = null;

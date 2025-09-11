@@ -100,7 +100,7 @@ $(document).ready(function () {
         game.there = true;
         $(".level").show();
         $(".main-cont").hide()
-         $(".input-cont").hide();
+        $(".input-cont").hide();
     });
 
     $(".start").click(function () {
@@ -223,11 +223,11 @@ $(document).ready(function () {
             // Hover out
             packt = setTimeout(() => {
                 $(this).slideUp();
-            }, 7000); 
-             document.querySelector(".setopt").style.color = '';
+            }, 7000);
+            document.querySelector(".setopt").style.color = '';
         }
     );
-   
+
 
     // $("#pick").click(() => {
     //     $(".paced").slideToggle();
@@ -273,6 +273,22 @@ $(document).ready(function () {
         }
     });
 
+    $('.aispace').hover(
+        function () {
+            $('.spinonai').addClass('rollspin')
+        },
+        function () {
+            $('.spinonai').removeClass('rollspin')
+        }
+    )
+    $('.humspace').hover(
+        function () {
+            $('.spinonhum').addClass('rollspin')
+        },
+        function () {
+            $('.spinonhum').removeClass('rollspin')
+        }
+    )
 
     window.addEventListener("keyup", (e) => {
         switch (e.key) {

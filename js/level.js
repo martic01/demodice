@@ -77,7 +77,7 @@ $(document).ready(function () {
 
     $(".bbtn").click(function () {
         const index = $(".bbtn").index(this);
-
+        console.log(index)
         let inputValue = $(this).closest('.bbt').find('.goalpoint').val()
         game.goal = inputValue
 
@@ -106,15 +106,19 @@ $(document).ready(function () {
             }
             game.playerVSai = 1;
             if (index === 0) {
+
                 game.level = "Easy";
                 setTimeout(() => {
                     $(".main-cont").show();
+                    console.log('in');
+
                     $(".level").hide();
                 }, game.time);
                 game.goalThreshold = 6;
                 game.dontRoll1 = 4;
                 game.stages = 1;
                 game.newState2 = 2;
+
 
                 $(".nextlv").show();
             } else if (index === 1) {
