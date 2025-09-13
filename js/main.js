@@ -314,11 +314,11 @@ $(document).ready(function () {
 
     window.addEventListener("keyup", (e) => {
         switch (e.key) {
-            case "r":
-                if (game.keyturn) {
-                    $("#roll").trigger("click");
-                }
-                break;
+            // case "r":
+            //     if (game.keyturn) {
+            //         $("#roll").trigger("click");
+            //     }
+            //     break;
             case "s":
                 if (game.keyturn) {
                     $(".save").trigger("click");

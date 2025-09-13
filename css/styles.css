@@ -1172,13 +1172,15 @@ h3 p {
     width: 44%;
     overflow-x: auto;
     align-content: center;
-    padding: 4px;
+    padding: 4vmin;
 }
-.scroll{
+
+.scroll {
     background-color: #00000031;
     align-content: center;
-    padding: 7px;
+    padding: 2vmin;
 }
+
 .levbuttons::-webkit-scrollbar {
     width: 8px;
 }
@@ -1191,9 +1193,9 @@ h3 p {
     background-color: #00000080;
 }
 
+
 .labellev {
-   
-    width: 80%;
+    width: 70%;
     margin: 10px auto;
     justify-content: space-between;
 }
@@ -1201,12 +1203,13 @@ h3 p {
 .labellev .inlabel {
     width: 40%;
     height: 60px;
-    
+
 }
 
 .labellev .inlabel div {
     position: relative;
-    min-width: 70px;
+    min-width: 50px;
+    max-height: 60px;
     width: 20%;
     height: 100%;
     padding: 10px;
