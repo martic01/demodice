@@ -1966,9 +1966,9 @@
         left: 1vw;
         bottom: 30vh;
         flex-direction: column;
-        justify-content: center !important;
+        justify-content: flex-start !important;
         align-items: flex-start !important;
-        gap: 27vh;
+        /* gap: 30vmin; */
     }
 
     .labellev .inlabel {
@@ -1976,9 +1976,12 @@
         justify-content: center !important;
         align-items: center;
         width: 100% !important;
-
+        height: 40% !important;
     }
-
+.labellev .humcontm{
+ margin-top: 17vh;
+        
+}
     .labellev .inlabel div {
         width: 24%;
     }
